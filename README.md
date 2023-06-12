@@ -1,5 +1,8 @@
 # Commands-Snippets-Installation
-A guidebook for ML practitioners and developers, providing essential commands, installation guides, code snippets and tips.
+A guidebook for ML practitioners and developers, providing essential commands, installation guides, code snippets and tips. It contains:
+1. Installation guides
+2. Machine learning codes and snippets
+3. Essential commands
 
 
 ## Installation guides
