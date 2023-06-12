@@ -1,7 +1,7 @@
 # Bash
 Some useful and frequently used `Bash` commands
 
-## Compress/Decompress files
+### Compress/Decompress files
 ```bash
 # compress the files to tar
 tar -czvf file.tar.gz dataset/
@@ -10,6 +10,28 @@ tar -xzvf file.tar.gz -C dataset/
 # list tar files
 tar -t file.tar.gz
 ```
+
+### Download the data over the network
+```bash
+curl --output <filename> 'https://lafeber.com/pet-birds/wp-content/uploads/2018/06/Scarlet-Macaw-2.jpg'
+wget 'https://lafeber.com/pet-birds/wp-content/uploads/2018/06/Scarlet-Macaw-2.jpg'
+```
+
+### Redirecting terminal output to file
+```bash
+# redirects the output to a file (overwrites if it already exists)
+command > filename.txt
+
+# appends the output to a file
+command >> filename.txt
+
+# redirects both output and errors to file
+command &> filename.txt
+# similarly appends
+command &>> filename.txt
+
+# redirects to file as well as displays on the terminal (both output and error)
+command 2>&1 | tee filename.txt
 
 ### Processes info
 ```bash
@@ -59,9 +81,9 @@ nmcli connection
 # device status
 nmcli dev status
 
-# available wifi list
+# available wifi network list
 nmcli device wifi list
 
-# connect to a wifi
+# connect to a wifi network
 nmcli --ask dev wifi connect <SSID>
 ```
