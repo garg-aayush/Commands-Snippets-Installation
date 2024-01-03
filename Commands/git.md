@@ -78,14 +78,14 @@ git log --oneline --decorate --graph
 ```git
 # Create a branch
 git branch <branch-name>
+# list all branches, local and remote
+git branch -a
 # switch to a existing branch
 git checkout <branch-name>
 # create and switch
 git checkout -b <branch-name>
-
 # delete a branch
 git branch --delete <branch-name>
-
 # push main branch to remote
 git push origin main
 # push a new local branch to remote
